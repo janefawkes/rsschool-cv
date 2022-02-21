@@ -17,7 +17,7 @@
     * R Basics
     Frontend 
     * JS Core Basics
-    * Adaptive CSS/SCSS Layout
+    * Adaptive HTML/CSS/SCSS Layout
     * React Basics
     
 # Code snippet
