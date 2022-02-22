@@ -57,6 +57,10 @@ a {
     text-decoration: none;
 }
 
+h1, h2, p {
+  margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -224,7 +228,12 @@ img {
 }
   
 .home__blob {
-    fill: hsl(224, 89%, 60%);
+    fill: url(#MyGradient);
+}
+
+.home__blob-img {
+  width: 370px;
+  border-radius: 50%;
 }
 
 /* About */
@@ -245,6 +254,26 @@ img {
 .about__img img {
     width: 200px;
     border-radius: .5rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: hsl(224, 56%, 12%);
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.footer__social {
+  margin-bottom: 2rem;
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 1rem;
 }
 
 /* Media */
