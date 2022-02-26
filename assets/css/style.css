@@ -306,7 +306,7 @@ img {
 }
 
 .footer__social {
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 .footer__icon {
@@ -353,11 +353,6 @@ img {
       grid-template-columns: .7fr;
       justify-content: center;
       column-gap: 1rem;
-    }
-    .work__container {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 2rem;
-      padding-top: 2rem;
     }
   }
   
@@ -409,10 +404,6 @@ img {
       align-items: center;
       text-align: initial;
     }
-    .work__container {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 2rem;
-    }
 }
   
   @media screen and (min-width: 992px) {
@@ -448,6 +439,6 @@ img {
       height: 100%;
       padding: 2rem;
       background-color: hsl(224, 56%, 12%);
-      transition: .5s;
+      transition: 0.5s;
     }
 }
