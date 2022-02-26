@@ -302,7 +302,7 @@ img {
   color: #fff;
   text-align: center;
   font-weight: 600;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 .footer__social {
@@ -311,8 +311,14 @@ img {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--accent-color);
   margin: 0 1rem;
+}
+
+.footer__logo {
+  width: 10vh;
+  height: 10vh;
+  margin: auto;
 }
 
 /* Media */
