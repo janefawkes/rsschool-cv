@@ -106,7 +106,7 @@ img {
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: hsl(223, 41%, 12%);
+    background-color: var(--accent-color);
 }
   
 .section {
@@ -117,26 +117,10 @@ img {
 .section-title {
     position: relative;
     font-size: 1.25rem;
-    color: hsl(223, 41%, 12%);
+    color: var(--text-color);
     margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
-}
-
-/* Buttons */
-
-.button {
-    display: inline-block;
-    background-color: hsl(224, 89%, 60%);
-    color: rgb(255, 255, 255);
-    padding: .75rem 2.5rem;
-    font-weight: 600;
-    border-radius: .5rem;
-    transition: .3s;
-}
-  
-.button:hover {
-    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 /* Navigation */
@@ -164,22 +148,8 @@ img {
 
 .nav__link:hover {
     position: relative;
-}
-
-.nav__link:hover::after {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 0.18rem;
-    left: 0;
-    top: 2rem;
-    background-color: hsl(224, 56%, 12%);
-}
-
-.nav__toggle {
-    color: hsl(224, 56%, 12%);
-    font-size: 1.5rem;
-    cursor: pointer;
+    color: var(--accent-color);
+    transition: ease, 0.2;
 }
 
 .active::after {
@@ -235,11 +205,12 @@ img {
 .home__social-icon {
     width: max-content;
     font-size: 1.5rem;
-    color: hsl(224, 56%, 12%);
+    color: var(--accent-color);
 }
   
 .home__social-icon:hover {
-    color: hsl(224, 89%, 60%);
+    color: var(--text-color);
+    transition: ease, 0.2s;
 }
   
 .home__img {
@@ -251,6 +222,7 @@ img {
   
 .home__blob {
     fill: url(#MyGradient);
+    opacity: 0.7;
 }
 
 .home__blob-img {
@@ -277,6 +249,10 @@ img {
     border-radius: .5rem;
 }
 
+.about__text {
+  line-height: 2em;
+}
+
 /* Skills */
 
 .skills__container {
@@ -284,8 +260,13 @@ img {
   text-align: center;
 }
 
+.skills__subtitle {
+  margin-bottom: 1rem;
+}
+
 .skills__text {
   margin-bottom: 2rem;
+  line-height: 2em;
 }
 
 .skills__data {
@@ -298,7 +279,7 @@ img {
   margin-bottom: 2rem;
   border-radius: .5rem;
   background-color: var(--z2-grey);
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: rgba(118, 75, 62, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .skills__names {
@@ -317,7 +298,7 @@ img {
 /* Footer */
 
 .footer {
-  background-color: hsl(224, 56%, 12%);
+  background-color: var(--z2-grey);
   color: #fff;
   text-align: center;
   font-weight: 600;
@@ -450,6 +431,9 @@ img {
 @media screen and (min-width: 968px) {
   h2 {
     font-size: 2rem;
+  }
+  .skills__img {
+    width: 20vw;
   }
 }
 
